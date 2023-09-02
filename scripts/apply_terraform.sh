@@ -1,0 +1,1 @@
+terraform apply ${AUTO_APPROVE:+-auto-approve}
