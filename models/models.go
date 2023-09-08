@@ -23,6 +23,14 @@ type User struct {
 	Order_Status    []Order            `json:"orders" bson:"orders"`
 }
 
+type Product struct {
+	Product_ID   primitive.ObjectID `bson:"_id"`
+	Product_Name *string            `json:"product_name"`
+	Price        *uint64            `json:"price"`
+	Rating       *uint8             `json:"rating"`
+	Image        *string            `json:"image"`
+}
+
 type ProductUser struct {
 	Product_ID   primitive.ObjectID `bson:"_id"`
 	Product_Name *string            `json:"product_name" bson:"product_name"`
